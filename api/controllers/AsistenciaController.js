@@ -10,7 +10,8 @@ module.exports = {
                 res.json(datoMilitante[0])
             }else{
                 res.json({
-                    nombre:'NO ESTA REGISTRADO'
+                    nombre:'NO ESTA REGISTRADO',
+                    img:''
                 })
             }
         })
