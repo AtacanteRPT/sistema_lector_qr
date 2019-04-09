@@ -5,12 +5,12 @@ module.exports = {
         Militante.find({identificacion:req.body.baseidentificacion}).exec(function(err,datoMilitante){
             // if(err) return res.server.error;
 
-            if(datoMilitante !=undefined){
+            if(datoMilitante !=null){
 
                 res.json(datoMilitante[0])
             }else{
                 res.json({
-                    nombre:'NO ESTA REFISTRADO'
+                    nombre:'NO ESTA REGISTRADO'
                 })
             }
         })
