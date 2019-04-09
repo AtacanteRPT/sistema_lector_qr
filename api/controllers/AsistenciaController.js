@@ -5,7 +5,7 @@ module.exports = {
         Militante.find({identificacion:req.body.baseidentificacion}).exec(function(err,datoMilitante){
             // if(err) return res.server.error;
 
-            if(datoMilitante !=null){
+            if(datoMilitante.length>0){
 
                 res.json(datoMilitante[0])
             }else{
