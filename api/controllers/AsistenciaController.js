@@ -2,7 +2,7 @@ module.exports = {
   
     mostrar:function (req,res) {
         console.log('QR:',req.body)
-        Militante.find(req.body.baseidentificacion).exec(function(err,datoMilitante){
+        Militante.find({identificacion:req.body.baseidentificacion}).exec(function(err,datoMilitante){
             // if(err) return res.server.error;
 
             if(datoMilitante !=undefined){
