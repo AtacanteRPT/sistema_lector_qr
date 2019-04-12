@@ -49,7 +49,9 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
    adapter: 'sails-mysql',
-        url: 'mysql://root:vps-carlos-mas@157.230.87.7/lector_prueba',
+        url: 'mysql://root:vps-carlos-mas@157.230.87.7/funcionarios',
+        // url: 'mysql://root:vps-carlos-mas@157.230.87.7/2_lector_prueba',
+
 
   },
 

@@ -8,7 +8,9 @@
 module.exports = {
 
   attributes: {
-    
+    createdAt: { type: 'number', autoCreatedAt: true, },
+    updatedAt: { type: 'number', autoUpdatedAt: true, },
+    id: { type: 'number', autoIncrement: true, },
 
     paterno: { type: 'string' },
         materno: { type: 'string' },
